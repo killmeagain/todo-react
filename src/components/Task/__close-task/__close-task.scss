@@ -1,0 +1,35 @@
+&__close-task {
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+    position: relative;
+
+    cursor: pointer;
+    outline: transparent;
+
+    &:hover {
+        &::after,
+        &::before {
+            background-color: $darkShadeBlack;
+        }
+        
+    }
+
+    &::after,
+    &::before {
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 1px;
+        background-color: $darkShadeHalf;
+    }
+
+    &::after {
+        transform: translate(-50%) rotate(-45deg);
+    }
+
+    &::before {
+        transform: translate(-50%) rotate(45deg);
+    }
+}

@@ -1,0 +1,25 @@
+.task {
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+
+    padding: 20px 15px;
+
+    background-color: #fff;
+
+    border-radius: 10px;
+
+    box-shadow: 1px 1px 20px 2px $darkShadeFourth;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(245, 245, 245);
+    }
+
+    @import "./__completed/__completed";
+    @import "./__title/__title";
+    @import "./__close-task/__close-task";
+}

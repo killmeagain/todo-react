@@ -1,0 +1,17 @@
+&__title {
+    padding: 0;
+    margin: 0;
+
+    display: block;
+
+    font-family: $raleway;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+
+    width: 90%;
+
+    color: $darkShadeGray;
+
+    @import "./_completed/_completed";
+}

@@ -1,0 +1,34 @@
+&__send-task {
+    border: 3px solid $green;
+    border-radius: 25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 10px 0;
+
+    font-family: $raleway;
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 700;
+
+    background-color: $green;
+
+    color: white;
+
+    text-transform: uppercase;
+
+    box-sizing: border-box;
+
+    cursor: pointer;
+
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+        color: $green;
+        background-color: #fff;
+        transition: 0.2s ease-in-out;
+    }
+
+    @import "./_disabled/_disabled";
+}

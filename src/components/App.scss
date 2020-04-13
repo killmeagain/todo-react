@@ -1,0 +1,46 @@
+.app {
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: #FFFFCC;
+    padding: 50px 120px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 1199px) {
+        padding: 50px 60px;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 50px 0px;
+    }
+
+    &__container {
+        width: 50%;
+
+        @media screen and (max-width: 1199px) {
+            width: 80%;
+        }
+
+        
+    }
+    &__title {
+        font-family: $lobster;
+        font-size: 60px;
+        line-height: 1.2;
+
+        color: $darkShadeGray;
+
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    
+}
+
+@import "./TodoInput/TodoInput.scss";
+@import "./Task/Task.scss";
+@import "./TodoList/TodoList.scss";
