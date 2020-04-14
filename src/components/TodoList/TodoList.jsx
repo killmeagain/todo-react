@@ -3,7 +3,7 @@ import Task from '../Task/Task';
 
 const TodoList = props => {
     const { tasks, deleteTask, setCompleted } = props;
-    let arrayElementsList = tasks.map( element => {
+    let arrayElementsList = tasks.map(element => {
         return (
             <li key={element.id} className="todo-list__item">
                 <Task
@@ -16,12 +16,12 @@ const TodoList = props => {
             </li>
         )
     });
-    
-    return(
+
+    return (
         <ul className="todo-list">
             {arrayElementsList}
         </ul>
-    ) 
+    )
 }
 
 export default TodoList;

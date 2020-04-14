@@ -1,24 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import TodoList from './TodoList';
 import { deleteTask, completedTask, getTasks } from '../../redux/thunk-creators/thunk-creators';
 
-class TodoListContainer extends React.Component {
+const TodoListContainer = React.memo( props => {
 
-    componentDidMount() {
-        this.props.getTasks();
-    }
+    useEffect(() => {
+        props.getTasks();
+    }, []);
 
-    render() {
-        return (
-            <TodoList 
-                tasks={this.props.tasks}
-                deleteTask={this.props.deleteTask}
-                setCompleted={this.props.setCompleted}
-            />
-        )
-    }
-}
+    return (
+        <TodoList
+            tasks={props.tasks}
+            deleteTask={props.deleteTask}
+            setCompleted={props.setCompleted}
+        />
+    )
+});
+
 
 
 const mapStateToProps = state => ({
